@@ -22,8 +22,8 @@ if(isset($_POST['txt'])) {
 $long_url = urlencode($_POST['txt']);
 
 
-$bitly_login = 'filiptronicek';
-$bitly_apikey = 'R_e8b7b028a203498f96129cbcda9f15e6';
+$bitly_login = 'LOGIN';
+$bitly_apikey = 'API_KEY';
 $uniqid = uniqid();
 $bitly_response = json_decode(file_get_contents("http://api.bit.ly/v3/shorten?login={$bitly_login}&apiKey={$bitly_apikey}&longUrl={$long_url}&format=json&shortUrl=http://filipt.cf/jednicka"));
 
